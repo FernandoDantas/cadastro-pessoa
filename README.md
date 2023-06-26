@@ -16,7 +16,7 @@ docker-compose up
 - docker stop postgres_cadastro
 ```
 
-## Para executar o start com o banco postgres criado utilizar o comando:;
+## Para executar o start com o banco postgres criado utilizar o comando:
 ```shell script
 - docker start postgres_cadastro
 ```
@@ -27,3 +27,5 @@ docker-compose up
 
 ## Servidor web utilizado:
 - Tomcat baixado no seguinte link: [https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90-windows-x64.zip](https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90-windows-x64.zip)
+
+https://www.youtube.com/watch?v=fCGYGqlQ0Fc
