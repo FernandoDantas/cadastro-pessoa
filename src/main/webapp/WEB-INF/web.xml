@@ -6,32 +6,35 @@
 
 	<!-- Nome da Aplicação -->
 	<display-name>cadastro-pessoa</display-name>
-	
+
 	<!-- Estágio do Projeto -->
 	<context-param>
-        <param-name>javax.faces.PROJECT_STAGE</param-name>
-        <param-value>Development</param-value>
-    </context-param>
-    
-    <!-- Tema do PrimeFaces -->
+		<param-name>javax.faces.PROJECT_STAGE</param-name>
+		<param-value>Development</param-value>
+	</context-param>
+
+	<!-- Tema do PrimeFaces -->
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
 		<param-value>bootstrap</param-value>
 	</context-param>
-    
-    
-    <!-- Configuração do JSF -->
-    <servlet>
-        <servlet-name>Faces Servlet</servlet-name>
-        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.xhtml</url-pattern>
-    </servlet-mapping>
-    
-    <!-- Carregamento do Hibernate -->
+
+	<welcome-file-list>
+		<welcome-file>pages/pessoas.xhtml</welcome-file>
+	</welcome-file-list>
+
+	<!-- Configuração do JSF -->
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+
+	<!-- Carregamento do Hibernate -->
 	<listener>
 		<listener-class>br.fernando.teste.kumulus.util.HibernateContexto</listener-class>
 	</listener>

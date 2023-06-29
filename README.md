@@ -28,4 +28,8 @@ docker-compose up
 ## Servidor web utilizado:
 - Tomcat baixado no seguinte link: [https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90-windows-x64.zip](https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90-windows-x64.zip)
 
-https://www.youtube.com/watch?v=fCGYGqlQ0Fc
+## O App é acessível na seguinte url:
+- [http://localhost:8080/cadastro-pessoa/](http://localhost:8080/cadastro-pessoa/)
+
+## Algumas configurações
+- Para salvar uma pessoa antes tem que se cadastra um Estado e uma cidade. Utilizei combos dependentes. 

@@ -107,5 +107,22 @@ public class CidadeDAOTest {
 		System.out.println("Sigla do Estado: " + cidade.getEstado().getSigla());
 		System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
 	}
+	
+	@Test	
+	public void buscarPorEstado() {
+		Long estadoCodigo = 1L;
+		
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		List<Cidade> resultado = cidadeDAO.buscarPorEstado(estadoCodigo);
+
+		resultado.forEach(r -> {
+			System.out.println("Código da Cidade: " + r.getCodigo());
+			System.out.println("Nome da Cidade: " + r.getNome());
+			System.out.println("Código do Estado: " + r.getEstado().getCodigo());
+			System.out.println("Sigla do Estado: " + r.getEstado().getSigla());
+			System.out.println("Nome do Estado: " + r.getEstado().getNome());
+			System.out.println();
+		});
+	}
 
 }
